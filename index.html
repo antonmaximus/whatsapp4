@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Whatsapp</title>
+  <meta name="viewport" content="initial-scale=1">
+</head>
+<body onload="openApp()">
+
+  
+<!-- 
+      <script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=16229261&PluID=0&w=300&h=250&ord=%n&ucm=true"></script>
+<noscript>
+<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=16229261&Page=&PluID=0&Pos=942670685" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=16229261&Page=&PluID=0&Pos=942670685" border=0 width=300 height=250></a>
+</noscript>
+
+   -->
+  
+<!-- 
+  <script src="http://bs.serving-sys-int.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=722824&PluID=0&w=300&h=250&ord=&ucm=true"></script>
+<noscript>
+<a href="http://bs.serving-sys-int.com/BurstingPipe/adServer.bs?cn=brd&FlightID=722824&Page=&PluID=0&Pos=404251927" target="_blank"><img src="http://bs.serving-sys-int.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=722824&Page=&PluID=0&Pos=404251927" border=0 width=300 height=250></a>
+</noscript> -->
+
+MMMMK
+<script>
+	
+function preventPopup() {
+    clearTimeout(timeout);
+    timeout = null;
+    window.removeEventListener('pagehide', preventPopup);
+}
+
+function openApp() {    
+    var iframe = document.createElement("iframe");
+    iframe.src = 'https://itunes.apple.com/us/app/whatsapp-messenger/id310633997'; //appurl
+    iframe.style.display = 'none';
+    
+    window.onload = function(){
+        document.body.appendChild(iframe);
+    }
+
+    timeout = setTimeout(function() {
+            document.location = appstore;
+    }, 500);
+    window.addEventListener('pagehide', preventPopup);
+} 
+
+</script>
+
+
+
+</body>
+</html>
